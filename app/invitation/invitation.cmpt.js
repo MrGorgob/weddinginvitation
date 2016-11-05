@@ -20,7 +20,7 @@
                     "img/bg/2.jpg",
                     "img/bg/3.jpg",
                     "img/bg/4.jpg"
-                ], {duration: 7000, fade: 1000, centeredX:true, centeredY:true});
+                ], {duration: 5000, fade: 1000, centeredX:true, centeredY:true});
 
             }
         };
