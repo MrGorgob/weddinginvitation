@@ -1,0 +1,52 @@
+
+<div id="info" class="container-fluid bg-white"  ng-switch on="infoType">
+    <br/>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <div class="text-center pull-sm-left">
+                <div class="col-md-4" >
+                    <h2 class="divider"> <a href="#thedate" ng-click="infoType = 'date'" ng-class="{active:infoType == 'date'}"> <span class="fa fa-heart" ng-show="infoType == 'date'"></span> DATE </a></h2>
+                </div>
+                
+                <div class="col-md-4">
+                    <h2 class="divider"><a href="#thelocation"  ng-click="infoType = 'church'"  ng-class="{active:infoType == 'church'}"> <span class="fa fa-plus" ng-show="infoType == 'church'"></span> CHURCH</a></h2>
+                </div>
+
+                <div class="col-md-4">
+                    <h2><a href="#thelocation"  ng-click="infoType = 'reception'"  ng-class="{active:infoType == 'reception'}"> <span class="fa fa-location-arrow" ng-show="infoType == 'reception'"></span> RECEPTION</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    
+
+    <div class="row">
+        <div class="col-md-12 animated animate-switch"  ng-switch-default>
+                <div class="text-center ">
+                    <h1 class="cursive" style="font-size:80px"> 27th January 2017</h1>
+            </div>
+        </div>
+
+        <div class="col-md-offset-4 col-md-4 clear-padding animated animate-switch" ng-switch-when="church">
+                
+                <div class="col-md-4">
+                        <address>
+                        <strong><span class="text-primary">Immaculate Mary Parish</span></strong>
+                        <br/>
+                        Antipolo
+                        <br/>
+                        Philippines, 1870
+                    </address>
+                </div>
+
+                <div class="col-md-8 text-right">
+                    <div style="border:1px solid black;">
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+      
+    
+</div>
