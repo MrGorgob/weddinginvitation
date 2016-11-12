@@ -7,49 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ara & Anthony | Wedding</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/plugins/love-icons/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">    
     <link href="css/mystyle.css" rel="stylesheet">
+    <link href="css/mystyle2.css" rel="stylesheet">
+    
 </head>
 
-<body>
-    <navigation></navigation>
+<body ng-cloak>
     <my-invitation></my-invitation>
     
-    <header class="container">
-        <section style="position:absolute; top:40%">
+    <div class="container">
+        <section  id="my-header">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="cursive fa-5x">Celebrating  </h1>
+                    <h1 class="cursive fa-5x">Ara & Anthony</h1>
+                    <h1 class="cursive fa-4x">are getting hitched</h1>
                 <br/>
-                <p class="wedding-font fa fa-3x">ARA <i class="cursive">&</i> ANTHONY</p>
                 </div>
             </div>
         </section>
-    </header>
-
-
-    <div id="gift" class="container-full-page bg-primary" style="">
-        
     </div>
 
-    
-    <my-wedding-info id="info"></my-wedding-info>    
-    <my-sponsors></my-sponsors>
-
-
-    <footer style="">
-        <div class="container-fluid bg-secondary" style="padding-top:50px; padding-bottom:50px">
-            <div class="text-left">
-                <h3 style="color:white"><span class="copyright">  </span> Copyright Ara & Anthony </h3>
-            </div>
-        </div>
-    </footer>          
+    <my-wedding-info/>
+    <my-map/>
 
 
 <!--<script src="vendor.bundle.js"></script>
@@ -61,11 +49,15 @@
 <script src="js/angular.min.js"></script>
 <script src="js/angular-animate.min.js"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsioBUzkbkwwybIBwjGEcrIZ2z4tDf1mo"></script>
+<script src="js/gmaps-min.js"></script>
+
 <!-- User Scripts--> 
 <script src="app/app.module.js"></script>
 <script src="app/app.templates.js"></script>
 <script src="app/invitation/invitation.cmpt.js"></script>
 <script src="app/navigation/navigation.cmpt.js"></script>
+<script src="app/map/map.cmpt.js"></script>
 <script src="app/info/weddinginfo.cmpt.js"></script>
 <script src="app/sponsors/sponsors.cmpt.js"></script>
 
